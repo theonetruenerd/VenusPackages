@@ -32,3 +32,16 @@ This then has several arguments that can be passed to it:
 For example, if I wanted to import the TestImportLibrary without the user interface, putting the files in subdirectories named "TestImportLibrarySubdirectory", replacing any files that exist and skipping method files, I would run the following command:
 
 HxMethodCopy .\TestImportLibrary.pkg /RunMode silent /SubDir TestImportLibrarySubdirectory /FileRule replace /SkipMeth
+
+Alternatively, you can download the batch file in this repo and add it to your path. If you do that, then you can simply run the following command and it should do all of the above:
+- "hip [libraryname]"
+
+  This should install the correct library from github, then run the import library from pkg command with the following parameters:
+  - RunMode set to proceed
+  - ProcOrg set to no
+  - FileRule set to ask
+  - PathRule set to ask
+  - InstrRule set to best
+  - MethPath,LibPath,LabPath,OthPath all set to default
+  - SubDir set to the library name
+  - SkipMeth,SkipLib,SkipLab,SkipOth all off
