@@ -33,8 +33,10 @@ For example, if I wanted to import the TestImportLibrary without the user interf
 
 HxMethodCopy .\TestImportLibrary.pkg /RunMode silent /SubDir TestImportLibrarySubdirectory /FileRule replace /SkipMeth
 
-Alternatively, you can download the batch file in this repo and put it in the following folder: "C:\Program Files (x86)\Hamilton\ImportedPackageFiles" and add that to your path. If you do that, then you can simply run the following command and it should do all of the above:
+Alternatively, you can download the batch file in this repo and put it in the following folder: "C:\Program Files (x86)\Hamilton\ImportedPackageFiles" and add that to your path. If you do that, then you can simply run the following command and it should do all of the above: 
 - "hip install [libraryname]"
+
+NB: The library name in this is case sensitive, and doesn't need the .pkg extension
 
   This should install the correct library from github, then run the import library from pkg command with the following parameters:
   - RunMode set to proceed
