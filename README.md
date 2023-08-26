@@ -5,7 +5,7 @@ The command syntax to be used is as follows:
 
 - To download the library file just onto your computer from cmd line:
 
-curl -O https://github.com/theonetruenerd/VenusPackages/blob/main/[LibraryName]
+curl -LJO https://github.com/theonetruenerd/VenusPackages/blob/main/[LibraryName]?raw=true
 
 NB: By default, this imports the pkg file with the same name as it is here, into whatever folder the cmd line is in when running the command. This can be changed as normally would be for the command line. The pkg files do not necessarily need to be downloaded into the Hamilton folder in Program Files (x86).
 
