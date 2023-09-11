@@ -1,7 +1,22 @@
 # VenusPackages
 A place to download and install venus libraries, in a similar manner to the way one would use pip
 
-The command syntax to be used is as follows:
+Download the batch file in this repo and put it in the following folder: "C:\Program Files (x86)\Hamilton\ImportedPackageFiles" and add that to your path. If you do that, then you can simply run the following command and it should do the full download and extraction and installation of the library, as described below: 
+- "hip install [libraryname]"
+
+NB: The library name in this is case sensitive, and doesn't need the .pkg extension
+
+  This should install the correct library from github, then run the import library from pkg command with the following parameters (meaning of parameters described further down):
+  - RunMode set to proceed
+  - ProcOrg set to no
+  - FileRule set to ask
+  - PathRule set to ask
+  - InstrRule set to best
+  - MethPath,LibPath,LabPath,OthPath all set to default
+  - SubDir set to the library name
+  - SkipMeth,SkipLib,SkipLab,SkipOth all off
+
+If you want to do this without running the batch file, you can instead do the following:
 
 - To download the library file just onto your computer from cmd line:
 
@@ -33,17 +48,3 @@ For example, if I wanted to import the TestImportLibrary without the user interf
 
 HxMethodCopy .\TestImportLibrary.pkg /RunMode silent /SubDir TestImportLibrarySubdirectory /FileRule replace /SkipMeth
 
-Alternatively, you can download the batch file in this repo and put it in the following folder: "C:\Program Files (x86)\Hamilton\ImportedPackageFiles" and add that to your path. If you do that, then you can simply run the following command and it should do all of the above: 
-- "hip install [libraryname]"
-
-NB: The library name in this is case sensitive, and doesn't need the .pkg extension
-
-  This should install the correct library from github, then run the import library from pkg command with the following parameters:
-  - RunMode set to proceed
-  - ProcOrg set to no
-  - FileRule set to ask
-  - PathRule set to ask
-  - InstrRule set to best
-  - MethPath,LibPath,LabPath,OthPath all set to default
-  - SubDir set to the library name
-  - SkipMeth,SkipLib,SkipLab,SkipOth all off
