@@ -4,7 +4,7 @@
 
 A place to download and install venus libraries, in a similar manner to the way one would use pip
 
-Download the batch file in this repo and put it in the following folder: "C:\Program Files (x86)\Hamilton\ImportedPackageFiles" (which will need creating first) and add that to your path. If you do that, then you can simply run the following command and it should do the full download and extraction and installation of the library, as described below: 
+Download the batch file in this repo and put it in the following folder: "C:\Program Files (x86)\Hamilton\ImportedPackageFiles" (which will need creating first) and [add that to your path](https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/). If you do that, then you can simply run the following command and it should do the full download and extraction and installation of the library, as described below: 
 - "hip install [libraryname]"
 
 NB: The library name in this is case sensitive, and doesn't need the .pkg extension
